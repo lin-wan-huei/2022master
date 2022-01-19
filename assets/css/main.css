@@ -157,13 +157,16 @@ a:active, a:focus, a:hover, a:hover:active {
     color: #009ce5
 }
 
-p {
-    font-size: 1rem
+p, li{
+    font-size: 17px;
+    font-weight: 300;
+    word-wrap:break-word;
 }
 
-@media screen and (max-width:768px) {
-    p {
-        font-size: .8rem
+@media screen and (max-width:660px) {
+    p, li {
+        font-size: 17px;
+        font-weight: 300;
     }
 }
 
@@ -686,7 +689,7 @@ section .intro {
     padding: 10px 0;
     display: block;
     text-decoration: none;
-    font-size: .8em;
+    font-size: 20px;
     letter-spacing: 5px
 }
 
@@ -931,7 +934,7 @@ section .intro {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 300px;
+    width: 305px;
     height: auto;
 }
 @media screen and (max-width: 660px) {
@@ -2534,6 +2537,4 @@ footer {
         transform: translateX(-31px)
     }
 }
-p, li{
-    word-wrap:break-word;
-}
+
