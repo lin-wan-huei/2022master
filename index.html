@@ -65,7 +65,8 @@
     &noscript=1"/>
   </noscript>
   <!-- End Facebook Pixel Code -->
-
+  <link rel="preload" href="./images/2022/kv_mb.png" as="image" media="(max-width: 600px)" />
+  <link rel="preload" href="./images/2022/kv_pc.jpg" as="image" media="(min-width: 601px)" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -188,8 +189,8 @@
       </div>
     </div>
     <div class="speaker">
-      <img src="images/2022/kv_pc.jpg" class="img-fluid desktop">
-      <img src="images/2022/kv_mb.jpg" class="mobile">
+      <img src="images/2022/kv_pc.jpg" class="img-fluid desktop speaker-img">
+      <img src="images/2022/kv_mb.jpg" class="mobile speaker-img">
     </div>
   </header>
 
@@ -762,6 +763,17 @@
     $(".btn_seemore--2").click(function () {
       $("#seemore--2").css("height","auto");
       $(this).hide("slow");
+    });
+
+    $(function(){
+      $(window).scroll(function() {
+        if($(window).scrollTop() >= 400) {
+          $('.speaker-img').addClass('filter-blur');
+        }
+        else {
+          $('.speaker-img').removeClass('filter-blur');
+        }
+      });
     });
   </script>
 </body>

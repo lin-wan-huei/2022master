@@ -125,3 +125,10 @@ $mb_s: 321px;
     animation: ttb .2s 4.4s ease forwards;
   }
 }
+.speaker-img{
+  transition: 0.8s;
+}
+.filter-blur{
+  transition: 0.8s;
+  filter: blur(10px);
+}

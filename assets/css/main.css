@@ -270,7 +270,8 @@ section {
     position: relative;
     width: 100%;
     padding: 4em 0;
-    overflow: hidden
+    overflow: hidden;
+    background-color: #000;
 }
 
 @media screen and (max-width:1024px) {
@@ -388,7 +389,6 @@ section .intro {
 
 .container, footer, header, section {
     position: relative;
-    background-color: #000;
 }
 
 .highlight {
