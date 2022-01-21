@@ -103,7 +103,8 @@ body, html {
     margin: 0;
     overflow-x: hidden;
     letter-spacing: 2px;
-    font-synthesis: none
+    font-synthesis: none;
+    position: relative;
 }
 
 body.modal-open, html.modal-open {
@@ -191,7 +192,7 @@ h1 {
     font-weight: 600;
     font-size: 60px;
     line-height: 80px;
-    color: #B79F92;
+    color: #000;
 }
 
 @media screen and (max-width:680px) {
@@ -274,7 +275,7 @@ section {
     width: 100%;
     padding: 4em 0;
     overflow: hidden;
-    background-color: #000;
+    background-color: #222222;
 }
 
 @media screen and (max-width:1024px) {
@@ -446,7 +447,7 @@ section .intro {
 }
 
 .menubar .bg_show {
-    height: 60px
+    height: 70px;
 }
 
 .menubar .menurel {
@@ -528,6 +529,8 @@ section .intro {
     width: auto;
     height: auto;
     line-height: inherit;
+    background: #000;
+    padding: 6px 34px;
 }
 .menubar .pc_menu ul {
     float: right
@@ -866,7 +869,7 @@ section .intro {
     text-align: left;
     font-size: 36px;
     line-height: 40px;
-    color: #B79F92;
+    color: #000;
     margin-bottom: 10px;
 }
 
@@ -910,7 +913,7 @@ section .intro {
 .main__header .container .main__intro .txt p.master-name{
     font-size: 26px;
     line-height: 25px;
-    color: #CDC2BF;
+    color:#B79F92;
     margin-bottom: 1rem;
 }
 @media screen and (max-width:660px){
@@ -927,7 +930,7 @@ section .intro {
     }
 }
 .main__header .container .main__intro .txt p.date{
-    color: #B79F92;
+    color: #fff;
 }
 
 .main__header .container .main__intro .info{
@@ -1057,7 +1060,7 @@ section .intro {
 }
 
 .master {
-    background-color: #000000;
+    background-color: #222222;
     color: #ffffff;
     position: relative;
     overflow: hidden
@@ -2057,6 +2060,7 @@ line-height: 32px;
 
 .card-body p{
     font-size: 15px;
+    margin-bottom: 0;
 }
 
 footer {
@@ -2538,3 +2542,7 @@ footer {
     }
 }
 
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+}

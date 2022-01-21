@@ -102,7 +102,7 @@ $mb_s: 321px;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #B79F92;
+      background-color: #000;
       z-index: 1;
       animation: ttb .2s 4.2s ease forwards;
     }
@@ -120,7 +120,7 @@ $mb_s: 321px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #B79F92;
+    background-color: #000;
     z-index: 1;
     animation: ttb .2s 4.4s ease forwards;
   }
@@ -131,4 +131,18 @@ $mb_s: 321px;
 .filter-blur{
   transition: 0.8s;
   filter: blur(10px);
+}
+.deco_line{
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  background-color: #7F6000;
+  z-index: 1;
+  &--1{
+    left: 0;
+  }
+  &--2{
+    right: 0;
+  }
 }
