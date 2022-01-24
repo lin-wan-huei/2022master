@@ -1009,8 +1009,8 @@ section .intro {
 @media screen and (max-width:680px) {
     .main__header .logo {
         width: 200px;
-        margin-top: 4rem;
-        margin-bottom: 190px;
+        margin-top: 1rem;
+        margin-bottom: 230px;
     }
 }
 

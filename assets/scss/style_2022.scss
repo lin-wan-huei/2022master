@@ -151,6 +151,9 @@ $mb_s: 321px;
 }
 .atc{
   margin: 30px auto;
+  @include mb-width_l(){
+    margin: 0px auto;
+  }
   h5{
     font-size: 17px;
     line-height: 32px;
