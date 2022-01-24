@@ -145,4 +145,21 @@ $mb_s: 321px;
   &--2{
     right: 0;
   }
+  @include mb-width_l(){
+    display: none;
+  }
+}
+.atc{
+  margin: 30px auto;
+  h5{
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-top: 10px;
+    letter-spacing: 0;
+    span{
+      font-size: 15px;
+      color: #7F6000;
+    }
+  }
 }
