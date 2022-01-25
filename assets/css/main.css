@@ -1076,7 +1076,8 @@ section .intro {
 
 .master__list {
     max-width: 690px;
-    margin: -7.5rem 0 2rem;
+    /* margin: -7.5rem 0 2rem; 有影片後打開 */
+    margin: 2rem 0 2rem;
 }
 @media screen and (max-width:660px) {
     .master__list{
