@@ -1432,9 +1432,9 @@ section .intro {
 
 .about .agenda .title2 {
     margin-bottom: 1.2rem;
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; */
 }
 @media screen and (max-width:660px){
     .about .agenda .title2{
@@ -1445,16 +1445,24 @@ section .intro {
     font-weight: 400;
     font-size: 32px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .about .agenda .title2 p {
-    margin-left: calc(100% - 69.3333%);
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    margin: -3.6rem 0 2rem;
+    margin-left: calc(100% - 58.3333%);
+    padding: 0 13px;
     font-size: 17px;
 }
 
 @media screen and (max-width:768px) {
     .about .agenda .title2 p {
+        margin: 0 auto;
         margin-left: inherit;
+        padding: 0;
+        width: 100%;
     }
 }
 
@@ -1815,7 +1823,7 @@ line-height: 32px;
 .join .plan{
     margin: -7.5rem 0 2rem;
 }
-@media screen and (max-width:660px) {
+@media screen and (max-width:992px) {
     .join .plan{
         margin: 2rem 0;
     }
